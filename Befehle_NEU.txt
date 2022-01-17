@@ -1,0 +1,45 @@
+Alle nötigen Befehle zur Aufgabe zu Linux Shell (13.01.2022):
+
+user@r207pc08:~$ ls
+Bilder  Dokumente  Downloads  Musik  Öffentlich  Schreibtisch  Videos  Vorlagen
+user@r207pc08:~$ cd Schreibtisch
+user@r207pc08:~/Schreibtisch$ mkdir Uebung
+user@r207pc08:~/Schreibtisch$ cd Uebung
+user@r207pc08:~/Schreibtisch/Uebung$ touch Test.txt
+user@r207pc08:~/Schreibtisch/Uebung$ gedit Test.txt 
+
+...nachdem ich dann im gedit mein Text geschrieben habe geht es weiter:
+
+user@r207pc08:~/Schreibtisch/Uebung$ cd ..
+user@r207pc08:~/Schreibtisch/$ cd ..
+user@r207pc08:~$ ls 
+
+Bilder  Dokumente  Downloads  Musik  Öffentlich  Schreibtisch  Videos  Vorlagen
+
+user@r207pc08:~$ cd /home/shares/
+user@r207pc08:/home/shares$ ls
+
+lehrmaterial  optProgs  schueler
+
+user@r207pc08:/home/shares$ cd schueler
+user@r207pc08:/home/shares/schueler$ ls
+
+Abendschule  ACHTUNG-Laufwerklöschung_am_Schulende.txt  Littera  save  Tagesschule  Testees  Testfile.txt
+
+user@r207pc08:/home/shares/schueler$ cd Tagesschule
+user@r207pc08:/home/shares/schueler/Tagesschule$ ls
+
+ 4a    5ab         5d_Fink   7a_beschte                 7c   baum.jpg     money.jpg                   Robotik2
+ 4d    5a_Bucher   6a       '7ad PuP Wahlpflichtfach'   7D   Gz_4besser   money.jpg:Zone.Identifier  'Sicherheitsmermale von euro banknoten.docx'
+ 4fm   5b          6C        7b                         8c   Informatik   right.docx
+
+user@r207pc08:/home/shares/schueler/Tagesschule$ mkdir 6b
+user@r207pc08:/home/shares/schueler/Tagesschule$ cd 6b
+user@r207pc08:/home/shares/schueler/Tagesschule/6b$ mkdir Konstantin
+user@r207pc08:/home/shares/schueler/Tagesschule/6b$ mv /home/user/Schreibtisch/Uebung/Test.txt /home/shares/schueler/Tagesschule/6b/Konstantin
+user@r207pc08:/home/shares/schueler/Tagesschule/6b$ cd Konstantin
+user@r207pc08:/home/shares/schueler/Tagesschule/6b/Konstantin$ zip Test.zip Test.txt
+user@r207pc08:/home/shares/schueler/Tagesschule/6b/Konstantin$ mv Test.zip /home/user/Schreibtisch/Uebung/
+
+
+
